@@ -1,0 +1,14 @@
+{% extends 'layout.html.twig' %}
+{% block title %}Usuario
+{% endblock %}
+{% block body %}
+    {% if is_granted('ROLE_ADMIN') %}
+	<h1>Nuevo Usuario</h1>
+	{{ form_start(formulario) }}
+	{{ form_widget(formulario) }}
+	{{ form_end(formulario) }}
+	{% else %}
+	<p> No tienes permiso para añadir nuevo usuario</p>
+{% endif %}
+
+{% endblock %}

@@ -1,0 +1,10 @@
+{% extends 'layout.html.twig' %}
+
+{% block main %}
+<main>
+    <h1>Nuevo Libro</h1>
+    {{ form_start(formulario) }}
+    {{ form_widget(formulario) }}
+    {{ form_end(formulario) }}    
+</main>
+{% endblock %}

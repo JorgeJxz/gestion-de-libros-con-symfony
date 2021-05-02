@@ -1,0 +1,30 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Libros{% endblock %}
+{% block body %}
+    <div id="contenedor">
+        <header>
+        <nav>
+            <ul>
+                <li> <a href="{{ path('inicio') }}">Inicio</a></li>
+                <li> <a href="{{ path('ver_libros') }}">Ver libros</a></li>
+                <li> <a href="{{ path('buscar_libro') }}">Buscar libro</a></li>
+
+                {% if is_granted('ROLE_ADMIN') %}
+                    <li> <a href="{{ path('nuevo_libro') }}">Nuevo libro</a></li>
+                    <li> <a href="{{ path('nuevo_usuario') }}">Nuevo Usuario </a></li>
+                {% endif %}
+                <li> <a href="{{ path('login') }}">Iniciar Sesión</a></li>
+            </ul>
+        </nav>
+        </header>
+
+        {% block main %}
+        {% endblock %}
+
+        <footer>
+            <h5>- Desarrollo Web en Entorno Servidor -  <a href="{{ path('logout') }}">[Cerrar  Sesión]</a></h5>
+            <hr />
+        </footer>
+    <div>
+{% endblock %}

@@ -1,0 +1,15 @@
+{% extends 'layout.html.twig' %}
+
+{% block main %}
+<main>
+    <h1>Buscar Libro por titulo</h1>
+        {{ form_start(buscador) }}
+        {{ form_widget(buscador) }}
+        {{ form_end(buscador) }}
+    {% if libros %}
+        {% for libro in libros %}
+            <li><a href="{{ path('ficha_libro',{'isbn':libro.isbn}) }}">{{libro.titulo}}</a></li>
+        {% endfor %}
+    {% endif %}
+</main>
+{% endblock %}

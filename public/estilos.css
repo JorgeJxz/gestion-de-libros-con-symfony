@@ -1,0 +1,97 @@
+*
+{
+ margin: 0px;
+ padding: 0px;
+}
+
+body
+{
+    width: 100%;
+    color: lightcoral;
+}
+
+#contenedor
+{
+    width: 80%;
+    box-shadow: 5px black;
+    margin: 0 auto;
+}
+
+nav
+{
+    float: left;
+    width: 200px;
+    height: 300px;
+    background-color:lightgoldenrodyellow;
+}
+
+nav li a
+{
+    font-size: 1.1em;
+    
+} 
+
+nav li 
+{
+    text-align:left;
+    padding: 10px;
+}
+
+li
+{
+    list-style: none;
+    padding: 5px;
+}
+
+li a 
+{
+    text-decoration: none;
+    font-size: 1.2em;
+    color: goldenrod;
+}
+
+header
+{
+    float: left;
+    padding: 50px;
+}
+
+footer
+{   
+    width: 100%;
+    float: left;
+    padding: 50px;
+}
+
+h5
+{
+    font-size: 1.3em;
+}
+
+main
+{
+    float: left;
+    padding: 50px;
+}
+
+.eliminar li a
+{
+    color: red;
+}
+
+div input, div select
+{
+    padding: 5px;
+    margin: 10px;
+    display: block;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+
+
+button
+{
+    position: relative;
+    padding: 5px;
+    top: 10px;
+}

@@ -1,0 +1,16 @@
+{% extends 'layout.html.twig' %}
+
+{% block main %}
+<main>
+    <h1>Ficha de Libro</h1>
+    {% if libro %}
+        <ul>
+            <li><strong>{{ libro.titulo }}</strong></li>
+            <li><strong>Autor: </strong> {{ libro.autor }}</li>
+            <li><strong>Numero de paginas: </strong> {{ libro.paginas  }}</li>
+        </ul>
+    {% else %}
+        <p>Libro no encontrado</p>
+    {% endif %}
+    </main>
+{% endblock %}

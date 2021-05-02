@@ -1,6 +1,7 @@
 # gestion-de-libros-con-symfony
 
-Un secillo programa que realice mientras estuve estudiando "desarrollo de aplicaciones en entorno servidor" en el ciclo superior de desarrollo de aplicaciones web
+Un secillo programa que realice mientras estuve estudiando "desarrollo de aplicaciones en entorno servidor" en el ciclo superior de desarrollo de aplicaciones web.
+Consiste en un gestor de los datos que se puedan almacenar de un libro para una biblioteca por ejemplo, guardando los datos en bases de datos relacionales.
 
 ### Pre-requisitos 📋 e Instalación 🔧
 
